@@ -16,6 +16,9 @@ function App() {
   const login=()=> {
     dispatch({type:'LOGIN', payload:{id:'noona', password:'123'}})
   }
+  const decrement=()=> {
+    dispatch({type:'DECREMENT'})
+  }
   return (
     <div>
       <h1>
@@ -24,6 +27,7 @@ function App() {
       <h1>{count}</h1>  
       <button onClick={increase}>증가!</button>
       <button onClick={login}>Login</button>
+      <button onClick={decrement}>감소!</button>
       <Box />
     </div>
   );

@@ -11,7 +11,7 @@ function reducer(state = initialState, action){ //reducer는 항상 return을 �
     //}
     switch(action.type){ //if(위 예시)로 쓸수도 있고, switch로 쓸수 있음.
         case "INCREMENT":
-            return { ...state, count: state.count + 1 }
+            return { ...state, count: state.count + action.payload.num }
         default:
             return { ...state}
     }

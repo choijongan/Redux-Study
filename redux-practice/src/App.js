@@ -9,7 +9,7 @@ function App() {
   const dispatch = useDispatch()
 
   const increase=() => {
-    dispatch({type:'INCREMENT'})
+    dispatch({type:'INCREMENT', payload:{num:5}}) //payload:내가 원하는 정보 보낼수 있음.
     
   }
   return (
